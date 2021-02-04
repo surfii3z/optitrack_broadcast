@@ -22,7 +22,7 @@ int main(int argc, char **argv)
     // 频率
     ros::Rate rate(60.0);
 
-    const std::string default_msg_type = "Mocap";
+    const std::string default_msg_type = "Odometry";
     const std::string msg_type = nh.param("msg_type", default_msg_type);
     //
     int notfeedbackcounter = 2;
