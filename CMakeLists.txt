@@ -160,6 +160,10 @@ add_dependencies(emulator_position_velocity optitrack_broadcast_gencpp)
 target_link_libraries(emulator_position_velocity ${catkin_LIBRARIES})
 target_link_libraries(emulator_position_velocity Mocap_emulator)
 
+add_executable(conversion_node src/conversion_node.cpp) 
+target_link_libraries(conversion_node ${catkin_LIBRARIES})
+
+
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
